@@ -5,3 +5,7 @@ ffuf -u http://10.10.114.96/FUZZ -w /usr/share/wordlists/dirb/common.txt -e .php
 ffuf -u http://10.10.114.96/FUZZ -w /usr/share/wordlists/dirb/common.txt -e .php,.html,.bak,.txt -fc 404
 
 ffuf -u http://10.10.114.96/FUZZ -w /usr/share/wordlists/dirb/common.txt
+ffuf -u http://10.10.114.96/login.php?FUZZ=test -w /usr/share/wordlists/SecLists/Discovery/Web-Content/burp-parameter-names.txt -fc 404
+ffuf -u http://10.10.114.96/FUZZ -w /usr/share/wordlists/dirb/common.txt -e .php,.html,.bak,.txt -fc 404
+ffuf -u http://10.10.114.96/FUZZ -w /usr/share/wordlists/dirb/common.txt -fc 404
+ffuf -u http://10.10.114.96/FUZZ -w /usr/share/wordlists/dirb/common.txt -e .php,.html,.txt
